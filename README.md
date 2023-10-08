@@ -49,7 +49,7 @@ encoding: "json_ietf"
 listmode: "stream"
 subscription_mode: "sample"
 sample_interval: 10
-
+```
 # `publisher.go` Documentation
 
 ## Overview
