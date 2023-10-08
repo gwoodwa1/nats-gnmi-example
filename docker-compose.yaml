@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  nats:
+    image: nats
+    ports:
+      - 4222:4222
+      - 5555:5555
+    command: 
+      - "-js"
+      - "-m" 
+      - "5555"
+      - "-DV"
+      - "-log"
+      - "/tmp/nats-log.txt"
+    volumes:
+      - ./logs:/tmp
+      - ./data:/data/nats
+
