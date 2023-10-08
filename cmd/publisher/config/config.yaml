@@ -1,0 +1,13 @@
+---
+name: "dc5-eos"
+address: "172.22.151.7:6030"
+insecure: true
+skipVerify: true
+gzip: true
+nats_url: 127.0.0.1:4222
+telemetry_topic: interface-counters
+gnmi_xpath: /interfaces/interface[name=*]/state/counters
+encoding: json_ietf
+listmode: stream
+subscription_mode: sample
+sample_interval: 10
